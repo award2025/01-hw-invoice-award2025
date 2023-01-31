@@ -16,10 +16,17 @@ using namespace std;
 
 int main(int argc, char const *argv[]) {
     double total;
-    char liveOhio = ''; // will either take in y or n if user lives in ohio
-    char Samsung = 's';
-    char ViewSonic = 'v';
+    int liveOhio;
+    char computerType;
+    int quantity;
 
+cout << "Enter a monitor type (s, v) followed by the quantity: ";
+cin >> computerType;
+cin >> quantity;
+cout << endl << "Do you live in Ohio (1 for yes/ 2 for no)? ";
+cin >> liveOhio;
+cout << endl << "Monitors Invoice" << endl;
+cout << computerType << " " << quantity << " " << liveOhio;
 
 
 
