@@ -11,9 +11,9 @@
 
 ---
 
-### Name: Enter your name
+### Name: Arthur Ward
 
-### Email: Enter your OU email
+### Email: aw145620@ohio.edu
 
 ---
 

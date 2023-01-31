@@ -1,7 +1,7 @@
 /**
  *   @file: invoice.cc
- * @author: Enter your name
- *   @date: Enter the date
+ * @author: Arthur Ward
+ *   @date: 1/31/2023
  *  @brief: Add Description
  */
 
