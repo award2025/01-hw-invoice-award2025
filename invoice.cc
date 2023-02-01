@@ -21,8 +21,8 @@ int main(int argc, char const *argv[]) {
     char computerType; //either Samsung or ViewSonic
     int quantity; //quantity of computers
     double price; //price of computer depending on brand selected
-    double tax;
-    double subtotal;
+    double tax; 
+    double subtotal; //discount subtracted from total price
     double discount; 
     double totalPrice;
     double reduction; // discount %
@@ -65,13 +65,13 @@ if(liveOhio ==1) //Gives output yes if user lives in Ohio, no if not and sets ta
     reduction = .05;
 }
    
-    totalPrice = price * quantity;
+    totalPrice = price * quantity; //Final calculations for values
     discount = reduction * totalPrice; 
     subtotal = totalPrice - discount; 
     tax = subtotal * tax; 
     total = tax + subtotal;
 
-cout << "Total price: $" << totalPrice;
+cout << "Total price: $" << totalPrice; //Displays values
 cout << endl << "_________________" << endl;
 cout << "Discount: $" << discount << endl;
 cout << "Subtotal: $" << subtotal << endl;
