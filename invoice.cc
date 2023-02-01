@@ -19,23 +19,40 @@ int main(int argc, char const *argv[]) {
     int liveOhio;
     char computerType;
     int quantity;
+    double price; 
 
 cout << "Enter a monitor type (s, v) followed by the quantity: ";
 cin >> computerType;
 cin >> quantity;
-cout << endl << "Do you live in Ohio (1 for yes/ 2 for no)? ";
+cout << "Do you live in Ohio (1 for yes/ 2 for no)? ";
 cin >> liveOhio;
-cout << endl << "Monitors Invoice" << endl;
-cout << computerType << " " << quantity << " " << liveOhio;
+cout << "Monitors Invoice" << "_________________" << endl;
+cout << "Monitor brand: ";
 
+if(computerType == 's')
+{
+    cout << "Samsung" << endl;
+    price = 190.00;
+}else
+{
+    cout << "ViewSonic" << endl;
+    price =170.00;
+}
+    
+cout << "Quantity: " << quantity << endl;
+cout << "Price: $" << price << endl;
+cout << "Ohio Resident: ";
 
+if(liveOhio ==1)
+{
+    cout << "Yes" << endl;
+}else
+{
+    cout << "No" << endl;
+}
 
-
-
-
-
-
-
-
+double totalPrice = price*quantity;
+cout << "Total price: $" << totalPrice;
+cout << "_________________" << endl;
     return 0;
 } /// main
